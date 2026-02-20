@@ -1,133 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>KanteenKart</title>
+  <meta charset="UTF-8">
+  <title>My App – Smart Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-    }
-
-    .hero {
-      background: linear-gradient(120deg, #ff9800, #ff5722);
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
-      padding: 60px 20px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .hero button {
-      background: white;
-      color: #ff5722;
-      border: none;
-      padding: 12px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
+    .container {
+      padding: 30px 15px;
+      max-width: 420px;
       margin: auto;
     }
 
-    .section h2 {
-      text-align: center;
-      color: #ff5722;
-      margin-bottom: 20px;
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
     }
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+    p {
+      font-size: 16px;
+      opacity: 0.9;
     }
 
-    .card {
+    .phone {
       background: white;
-      padding: 20px;
-      width: 250px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
+      border-radius: 30px;
+      padding: 15px;
+      margin: 25px auto;
+      color: black;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
     }
 
-    .footer {
-      background: #333;
+    .screen {
+      background: #f4f6f8;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .screen img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: block;
+      margin: 10px 0;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      background: #2575fc;
       color: white;
-      text-align: center;
-      padding: 15px;
+    }
+
+    .btn.secondary {
+      background: #6a11cb;
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    .features li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO SECTION -->
-  <div class="hero">
-    <h1>KanteenKart</h1>
-    <p>SKIP THE QUEUE,GRAB YOUR MEAL!</p>
-    <button>View Demo</button>
-  </div>
+  <div class="container">
+    <h1>My App</h1>
+    <p>A smart app that solves a real problem beautifully.</p>
 
-  <!-- PROBLEM -->
-  <div class="section">
-    <h2>The Problem</h2>
-    <div class="cards">
-      <div class="card">⏳ Long queues during short breaks</div>
-      <div class="card">👥 Overcrowded canteens</div>
-      <div class="card">😓 Wasted break time</div>
-      <div class="card">Food often gets finished</div>
+    <div class="phone">
+      <div class="screen">
+
+        <!-- Mockup Image -->
+        <img src="https://i.imgur.com/8Km9tLL.png" alt="App Mockup">
+
+        <!-- Demo Buttons -->
+        <button class="btn" onclick="alert('Demo: User Login Screen')">Login</button>
+        <button class="btn secondary" onclick="alert('Demo: Main Dashboard')">Open Dashboard</button>
+
+      </div>
     </div>
-  </div>
 
-  <!-- SOLUTION -->
-  <div class="section">
-    <h2>Our Solution</h2>
-    <div class="cards">
-      <div class="card">📱 Pre-order food via app</div>
-      <div class="card">⏰ Order 10–15 min before break</div>
-      <div class="card">✅ Food ready on arrival</div>
-    </div>
-  </div>
+    <ul class="features">
+      <li>✅ Easy to use</li>
+      <li>✅ Mobile-first design</li>
+      <li>✅ Real-world problem solution</li>
+      <li>✅ Scalable for future growth</li>
+    </ul>
 
-  <!-- HOW IT WORKS -->
-  <div class="section">
-    <h2>How It Works</h2>
-    <div class="cards">
-      <div class="card">1️⃣ Select food</div>
-      <div class="card">2️⃣ Place order</div>
-      <div class="card">3️⃣ Pick up without waiting</div>
-    </div>
-  </div>
-
-  <!-- FUTURE -->
-  <div class="section">
-    <h2>Future Scope</h2>
-    <div class="cards">
-      <div class="card">💳 Online payments</div>
-      <div class="card">📊 Admin dashboard</div>
-      <div class="card">📈 Demand prediction</div>
-      <div class="card"> AI Based meal recommendations</div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    Team KanteenKart | College Event Demo
+    <footer>
+      © 2026 | App Pitch Demo
+    </footer>
   </div>
 
 </body>
