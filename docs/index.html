@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Smart Canteen App</title>
+  <title>KanteenKart</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #ff9800, #ff5722);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background: white;
+      color: #ff5722;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #ff5722;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Smart Canteen Pre-Order System</h1>
-<p>Order food before break. Skip queues. Save time.</p>
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1>Smart Canteen Pre-Order System</h1>
+    <p>SKIP THE QUEUE,GRAB YOUR MEAL!</p>
+    <button>View Demo</button>
+  </div>
 
-<h2>The Problem</h2>
-<p>During short breaks, students waste time standing in long queues at the canteen.</p>
+  <!-- PROBLEM -->
+  <div class="section">
+    <h2>The Problem</h2>
+    <div class="cards">
+      <div class="card">⏳ Long queues during short breaks</div>
+      <div class="card">👥 Overcrowded canteens</div>
+      <div class="card">😓 Wasted break time</div>
+      <div class="card">Food often finished,leaving them frustrated</div>
+    </div>
+  </div>
 
-<h2>Our Solution</h2>
-<p>Students can pre-order food 10–15 minutes before break so their meal is ready.</p>
+  <!-- SOLUTION -->
+  <div class="section">
+    <h2>Our Solution</h2>
+    <div class="cards">
+      <div class="card">📱 Pre-order food via app</div>
+      <div class="card">⏰ Order 10–15 min before break</div>
+      <div class="card">✅ Food ready on arrival</div>
+    </div>
+  </div>
 
-<h2>How It Works</h2>
-<ol>
-  <li>Open app before break</li>
-  <li>Select food & place order</li>
-  <li>Pick up food without waiting</li>
-</ol>
+  <!-- HOW IT WORKS -->
+  <div class="section">
+    <h2>How It Works</h2>
+    <div class="cards">
+      <div class="card">1️⃣ Select food</div>
+      <div class="card">2️⃣ Place order</div>
+      <div class="card">3️⃣ Pick up without waiting</div>
+    </div>
+  </div>
 
-<h2>Future Scope</h2>
-<p>Online payments, order tracking, admin dashboard.</p>
+  <!-- FUTURE -->
+  <div class="section">
+    <h2>Future Scope</h2>
+    <div class="cards">
+      <div class="card">💳 Online payments</div>
+      <div class="card">📊 Admin dashboard</div>
+      <div class="card">📈 Demand prediction</div>
+      <div class="card"> AI Based meal recommendations</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Team KanteenKart | College Event Demo
+  </div>
 
 </body>
 </html>
