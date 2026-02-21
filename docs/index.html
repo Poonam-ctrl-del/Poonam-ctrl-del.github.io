@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Smart Canteen</title>
+  <meta charset="UTF-8">
+  <title>College Canteen</title>
+
+  <!-- CSS FILE LINK -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Smart Canteen App Demo 🍽️</h1>
-  <p>If you see this, GitHub Pages is working.</p>
+
+  <h1>🍔 KanteenKart</h1>
+  <p>SKIP THE QUEUE,GRAB YOUR MEAL! 😋</p>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Burger</h2>
+      <p>Price: ₹50</p>
+      <button onclick="addItem()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h2>Pizza</h2>
+      <p>Price: ₹120</p>
+      <button onclick="addItem()">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h2>Sandwich</h2>
+      <p>Price: ₹40</p>
+      <button onclick="addItem()">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <button class="order-btn" onclick="placeOrder()">Order Now</button>
+
+  <!-- JS FILE LINK -->
+  <script src="script.js"></script>
+
 </body>
 </html>
